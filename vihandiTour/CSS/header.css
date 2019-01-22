@@ -1,0 +1,82 @@
+/* 顶部图片 */
+
+.body {
+    position: relative;
+}
+
+
+/* 顶部导航列表 */
+.top_nav {
+    width: 100%;
+    height: 76px;
+    background: url(../img/bg_top.png) no-repeat 50% 0; 
+    z-index: 5;
+}
+.fix {
+    position: fixed;
+    /* left: 0;
+    top: 0; */
+}
+.top_nav  .logo a {
+    width: 142px;
+    height: 69px;
+    display: block;
+    background: url(../img/nav_spr.png) no-repeat 0 -132px;
+    text-indent: -2000px;
+    margin-top: 4px;
+}
+.top_nav .nav_list li .han{
+    color: #e69800;
+}
+
+.top_nav .nav_list {
+    margin-top: 18px;
+    height: 50px;
+    width: 800px;
+    margin-left: 50px;
+    background-color: #000;
+}
+.top_nav .nav_list li {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s linear;
+}
+
+.top_nav .nav_list li a {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    color: #ccc;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    background-color: #000;
+}
+.top_nav .nav_list li a:last-child {
+  
+    transform: translateZ(25px);
+}
+
+.top_nav .nav_list li a:first-child{
+    background-color: #e69800;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+
+.top_nav .nav_list li:hover {
+     transform: rotateX(-90deg);
+}
+.top_nav .nav_list li:nth-child(2):hover {
+    transform: rotateX(0deg);
+}
+.top_nav .login {
+    margin-top: 18px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}

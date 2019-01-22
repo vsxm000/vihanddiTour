@@ -1,0 +1,412 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,
+form { margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6 { font-size: 100%;}
+ul,ol { list-style: none;}
+em,b { font-style: normal;}
+a { text-decoration: none; outline:0 none;}
+img { display: block; border: 0;}
+body { position: relative; padding-top: 42px; font: 12px/1.5 '\5FAE\8F6F\96C5\9ED1', tahoma, '\5b8b\4f53', sans-serif; background-color: #000; opacity:0;    -webkit-transition: opacity .3s ease-in-out;    transition: opacity .3s ease-in-out;}
+.clearfix:after { content: " "; clear: both; height: 0; visibility: hidden; display: block;}
+.clearfix { *zoom: 1;}
+.pr{ position:relative;}
+.fr{ float:right;}
+.fl{ float:left;}
+
+
+
+.sp { background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/sprite.png) no-repeat; background-size: 9.6rem 0.81rem;}
+.hide { height: 0; line-height: 0; font-size: 0; visibility: hidden; display: none;}
+
+
+
+.scroll_tips {
+    position: fixed;
+    bottom: .15rem;
+    left: 50%;
+    width: .19rem;
+    height: .3rem; background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/icon.png) no-repeat; background-size:0.19rem 0.3rem;
+    margin-left: -.09rem;
+    z-index: 5;
+}
+
+
+/* top */
+.top {position: fixed;width: 100%;min-width: 1200px;height: 0.8rem;overflow: hidden;background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_top.png) no-repeat 50% 0;z-index: 5; }
+.toplogo { background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/headlogo.png) center center no-repeat; background-size:0.79rem 0.49rem; width:2rem; height:0.8rem; position:absolute; top:0; left:0; border:1px solid rgba(51,51,51,0.3); }
+.topbarbtn a{ position:absolute; top:0; right:0; width:1.4rem; height:0.8rem; line-height:0.78rem; background:#222222;  text-align:center; color:#777777; font-size:0.16rem;display: table-cell;vertical-align:middle; font-weight:bold;}
+.topbarbtn a.on{  background:#e69800;color:#fff; }
+.topbarbtn a:hover{  background:#e69800;color:#fff; }
+
+
+/* nav */
+.nav {position: absolute;top: 1.4rem;left: .45rem;background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_nav.png) no-repeat 50% 0;background-size: .42rem 6.93rem;width: 0.42rem;height: 6.95rem;z-index: 10;display: none;}
+.nav li {position: absolute;left: .31rem;height: .49rem;width: 3rem;}
+.nav .nav_up,
+.nav .nav_up a,
+.nav .nav_down,
+.nav .nav_down a {display: block;width: .34rem;height: .34rem;position: absolute;left: 0;text-indent: -999em;}
+.nav .nav_up,
+.nav .nav_up a {top: 0;}
+.nav .nav_down,
+.nav .nav_down a {bottom: 0;}
+.nav li b,
+.nav li span,
+.nav li div {float: left;}
+
+.nav_text_txt {width: 1.5rem;font-size: .16rem;color: #fff; height: .49rem;padding-left: .15rem;display: none;opacity: 0; border:1px solid #666; line-height:0.49rem;}
+.nav_text_txt .zt{ font-size:0.14rem; color:#ffbf42; font-weight:bold;}
+
+
+.style2 .nav_text_txt {width: 2rem;font-size: .16rem;color: #fff; height: .49rem;padding-left: .15rem;display: none;opacity: 0; border:1px solid #666; line-height:0.24rem;}
+.style2 .nav_text_txt .zt{ font-size:0.14rem; color:#ffbf42; font-weight:bold;}
+
+
+.nav span {display: none;opacity: 0;width: 0;height: 0;border-style: solid;border-width: .04rem 0 .04rem .07rem;margin: .21rem .06rem 0 .12rem;border-color: transparent transparent transparent #e69800;}
+.nav b {font-size: .14rem;line-height: .5rem;color: #fff;font-weight: bold;}
+.nav_li1 {top: .36rem;}
+.nav_li2 {top: 1.3rem;}
+.nav_li3 {top: 2.26rem;}
+.nav_li4 {top: 3.2rem;}
+.nav_li5 {top: 4.15rem;}
+.nav_li6 {top: 5.12rem;}
+.nav_li7 {top: 6.05rem;}
+
+.nav_text_txt{ border:1px solid #666; }
+.nav .active b,
+.nav li:hover b {color: #e69800;}
+.nav .active span,
+.nav li:hover span {display: block;-webkit-animation: fadeInLeft .2s ease-in-out forwards;animation: fadeInLeft .2s ease-in-out forwards;}
+.nav .active div,
+.nav li:hover div {display: block;-webkit-animation: fadeInLeft .2s .1s ease-in-out forwards;animation: fadeInLeft .2s .1s ease-in-out forwards;}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-.05rem, 0, 0);
+        transform: translate3d(-.05rem, 0, 0);
+        transform: translate3d(-.05rem, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-.05rem, 0, 0);
+        transform: translate3d(-.05rem, 0, 0);
+        transform: translate3d(-.05rem, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(.05rem, 0, 0);
+        transform: translate3d(.05rem, 0, 0);
+        transform: translate3d(.05rem, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(.05rem, 0, 0);
+        transform: translate3d(.05rem, 0, 0);
+        transform: translate3d(.05rem, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        transform: none;
+    }
+}
+
+
+/* header */
+#sectionmp4{ height:100%; overflow:hidden; position:relative;  }
+#sectionqh{ height:100%; overflow:hidden; position:relative; z-index:2;  }
+#video1{ position:absolute; top:0; left:0;}
+.header { background:none;background-size: cover;}
+.h_slogen{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_header_slogen.png) no-repeat; width:8.42rem; height:3.27rem; background-size:100%; position:absolute; top:1.2rem; left:5.6rem;}
+
+.slogan_txt{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_header_slogen_txt.png) no-repeat; background-size:100%; width:3.86rem; height:0.59rem; position:absolute; top:7.9rem; left:50%; margin-left:-1.93rem;  }
+.h_btn{ width:4rem; left:50%; margin-left:-2rem; position:absolute; top:6.1rem;}
+.topbarbtn2{  display:table; margin:0 auto; text-align:center;}
+.topbarbtn2 a{ font-size:0.16rem; color:#fff; margin:0 0.22rem;font-weight:bold;  display:inline-block; padding-top:0.28rem; padding-bottom:0.23rem; outline:0 none; }
+.topbarbtn2 a.on{ font-size:0.16rem; color:#faaf1d;  border-bottom:0.06rem solid #faaf1d; }
+.topbarbtn2 a:hover{ font-size:0.16rem; color:#faaf1d;  border-bottom:0.06rem solid #faaf1d; }
+
+.h_btn a{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_header_btn.png) no-repeat; background-size:100%; width:2.04rem; height:0.7rem; display:block; float:left; margin-left:-0.15rem; text-align:center; font-size:0.22rem; color:#777777; text-align:center; line-height:0.68rem;}
+.h_btn a.on{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_header_btn_on.png) no-repeat; background-size:100%; font-weight:bold; color:#fff; }
+.h_btn a:hover{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_header_btn_on.png) no-repeat; background-size:100%; font-weight:bold; color:#fff; }
+
+/* section1 */
+
+.section1 { }
+.section1title1{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section1_title.png) no-repeat; width:3.39rem; height:0.58rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-1.69rem; z-index:11;}
+.section1title2{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section1_title_2.png) no-repeat; width:3.66rem; height:0.58rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-1.83rem; z-index:11;}
+.section1title3{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section1_title_3.png) no-repeat; width:3.56rem; height:0.58rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-1.78rem; z-index:11;}
+.section1title4{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section1_title_4.png) no-repeat; width:3.64rem; height:0.58rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-1.82rem; z-index:11;}
+.section1title5{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section1_title_5.png) no-repeat; width:3.62rem; height:0.57rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-1.81rem; z-index:11;}
+
+.weather_list,
+.terrain_list {width: 100%;clear:both; display:block; overflow:hidden;height:100%; position:relative;}
+.weather_list li {float: left;position: relative;height:100%;width: 33.33%; background:#000; /*transition: .3s ease;  -webkit-transition: .3s ease;*/overflow: hidden;}
+.weather_list li img {opacity: 0.6; /*transition: 2s ease-in-out .3s; -webkit-transition: 2s ease-in-out .3s;*/ height:100%;}
+.weather_list li img:hover {opacity: 1;}
+
+.weather_list li:nth-of-type(3) { position:absolute; right:0; top:0;  }
+.map3_list li:nth-of-type(3) { position:absolute; right:0; top:0;  }
+
+
+.map2_list {width: 100%;clear:both; display:block; overflow:hidden;height:100%; position:relative;}
+.map2_list li {float: left;position: relative;height:100%;width: 50%; background:#000; /*transition: .3s ease;  -webkit-transition: .3s ease;*/overflow: hidden;}
+.map2_list li img {opacity: 0.6; /*transition: 2s ease-in-out .3s; -webkit-transition: 2s ease-in-out .3s;*/ width:100%;}
+.map2_list li img:hover {opacity: 1; }
+
+
+.map3_list {width: 100%;clear:both; display:block; overflow:hidden;height:100%; position:relative;}
+.map3_list li {float: left;position: relative;height:100%;width: 33.33%; background:#000; /*transition: .3s ease;  -webkit-transition: .3s ease;*/overflow: hidden;}
+.map3_list li img {opacity: 0.6; /*transition: 2s ease-in-out .3s; -webkit-transition: 2s ease-in-out .3s;*/height:100%;}
+.map3_list li img:hover {opacity: 1;}
+
+
+
+.map_txt{ font-size:0.16rem; color:#132031; text-align:center; line-height:0.24rem; position:absolute; top:2rem; width:100%;}
+.map_txt.color_w{ color:#fff; }
+.map_txt.color_b{ color:#cbddf5;}
+/* section2 */
+.section2{background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section2.jpg) no-repeat 50% 0;background-size: cover;}
+.section2title{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section2_title.png) no-repeat; width:3.58rem; height:0.58rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-1.79rem;}
+
+.swiper-container{ width:100%;}
+.swiper-container img{ width:100%;}
+
+.section2 .slidebox{ position:absolute; width:100%; top:1.2rem; left:0%; }
+.section3 .slidebox{ position:absolute; width:12.76rem; top:1.2rem; left:50%; margin-left:-6.38rem;}
+
+
+
+.section1 .fp-controlArrow.fp-prev{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/btnprev.png) no-repeat; width:0.47rem; background-size:100%; height:0.47rem; border-width:0;border-color:none; top:8.55rem !important; left:7.65rem;z-index:5; position:absolute;}
+.section1 .fp-controlArrow.fp-next{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/btnright.png) no-repeat; width:0.47rem; background-size:100%; height:0.47rem;border-width:0;border-color:none;top:8.55rem !important; right:7.65rem; z-index:5; position:absolute;}
+
+
+.section2 .fp-controlArrow.fp-prev{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/btnprev.png) no-repeat; width:0.47rem; background-size:100%; height:0.47rem; border-width:0;border-color:none; top:7.35rem !important; left:8.3rem;z-index:5; position:absolute;}
+.section2 .fp-controlArrow.fp-next{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/btnright.png) no-repeat; width:0.47rem; background-size:100%; height:0.47rem;border-width:0;border-color:none;top:7.35rem !important; right:8.3rem; z-index:5; position:absolute;}
+
+
+
+
+
+
+
+@media screen and (max-width: 1600px){
+	
+.section1 .fp-controlArrow.fp-prev{  top:8.65rem !important;}
+.section1 .fp-controlArrow.fp-next{top:8.65rem !important;  }
+
+
+.section2 .fp-controlArrow.fp-prev{ top:7.5rem !important; }
+.section2 .fp-controlArrow.fp-next{top:7.5rem !important; }
+
+
+}
+
+
+.fp-tableCell{ vertical-align:top;}
+
+/*slide dd...*/
+.section1 .fp-slidesNav.bottom{ top:8.3rem !important;}
+.section2 .fp-slidesNav.bottom{ top:8.3rem !important;}
+.section3 .fp-slidesNav.bottom{ top:8.3rem !important;}
+
+.fp-slidesNav ul{ width:100%; text-align:center;}
+#fp-nav ul li a, .fp-slidesNav ul li a{width:0.3rem; height:0.04rem; }
+#fp-nav ul li, .fp-slidesNav ul li{width:0.3rem; height:0.04rem; margin:0 0.1rem; padding:0; }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{width:0.3rem; height:0.04rem; background:#999c9f; border-radius:0; margin:0; padding:0;}
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span{ margin:0; padding:0; left:0; top:0;}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{width:0.3rem; height:0.04rem; background:#f2a900; border-radius:0; margin:0; padding:0;}
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span{width:0.3rem; height:0.04rem;}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{ top:0; left:0;}
+
+ 
+ 
+ .slideporimg{ width:9.89rem; margin:0 auto; position:relative;}
+.slideporimg img{ width:100%;}
+.slideporimg_t1{ font-size:0.24rem; color:#fff; font-weight:bold;}
+.slideporimg_t2{ font-size:0.14rem; color:#fff; }
+.slideporimg_t3{ font-size:0.14rem; color:#fff;   }
+
+.slideporimg_pa{ position:absolute; top:5.7rem; width:100%; text-align:center;}
+
+
+
+
+/* section3 */
+.section3title{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/act_bg_section1_title.png) no-repeat; width:4.31rem; height:0.67rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-2.15rem;}
+.section3{background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/act_bg_section1.jpg) no-repeat 50% 0;background-size: cover;}
+.section3 .fp-controlArrow.fp-prev{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/btnprev.png) no-repeat; width:0.47rem; background-size:100%; height:0.47rem; border-width:0;border-color:none; top:7.35rem !important; left:5.2rem;z-index:5; position:absolute;}
+.section3 .fp-controlArrow.fp-next{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/btnright.png) no-repeat; width:0.47rem; background-size:100%; height:0.47rem;border-width:0;border-color:none;top:7.35rem !important; right:5.2rem; z-index:5; position:absolute;}
+
+
+
+.s1_box1{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/act_section_img1.jpg) no-repeat; width:6.2rem; height:4.28rem; background-size:100%; position:relative;}
+.s1_box2{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/act_section_img2.jpg) no-repeat; width:6.2rem; height:4.28rem; background-size:100%; position:relative;}
+.s1_box_c{ width:12.8rem; position:absolute; top:2.1rem; left:50%; margin-left:-6.4rem;}
+.s1_box_c .s1_box{ display:inline-block;background:#1e2328; width:6.2rem;}
+.s1_box_pa1{ position:absolute; top:0; left:0.2rem; font-size:0.24rem; color:#e69800; font-weight:bold; line-height:0.58rem; height:0.6rem;}
+.s1_box_pa2{ position:absolute; top:0; right:0.2rem; font-size:0.16rem; color:#7f8a96;  line-height:0.58rem; height:0.6rem;}
+.s1_box_bgc{ padding:0 0.2rem 0.2rem; }
+.s1_box_bgc p{ font-size:0.16rem; color:#7f8a96; padding-top:0.2rem; height:1rem; }
+.s1_box_bgc p span{ color:#e69800; }
+.s1_box_bgc a{ font-size:0.14rem; color:#e69800; border:1px solid #e69800; padding:0.04rem 0.16rem; display: table; }
+
+
+/* section4 */
+.section4title{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/act_bg_section2_title.png) no-repeat; width:5.73rem; height:0.67rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-2.65rem;}
+.section4{background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/act_bg_section2.jpg) no-repeat 50% 0;background-size: cover;}
+
+.section2_t1{ font-size:0.24rem; color:#333333; font-weight:bold; width:100%; text-align:center; position:absolute; top:1.7rem; left:0;}
+.section2_t2{ font-size:0.16rem; color:#333333; width:100%; text-align:center;position:absolute; top:2.1rem; left:0;}
+.section2_t3{ font-size:0.16rem; color:#e69800; text-align:center; position:absolute; top:8.1rem; left:0; width:100%; text-align:center; font-weight:bold;}
+
+
+
+
+
+
+
+/* section5 */
+.section5title{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section_1218_title.png) no-repeat; width:6.09rem; height:1.28rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-3.04rem;}
+.section5{background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section_1218_1.jpg) no-repeat 50% 0;background-size: cover;}
+.s5_box1{   width:5.2rem; height:3.6rem; background-size:100%; position:relative;}
+.s5_box2{  width:5.2rem; height:3.6rem; background-size:100%; position:relative;}
+.s5_box img{   width:100%;}
+
+.s5_box_c{ width:10.9rem; position:absolute; top:2.4rem; left:50%; margin-left:-5.45rem;}
+.s5_box_c .s1_box{ display:inline-block;background:#1e2328; width:5.2rem;}
+.s1_box_bgc b.c1{ font-size:0.24rem; color:#e69800; }
+a.ljxq{ font-size:0.14rem; color:#e69800; border:1px solid #e69800; padding:0.1rem 0.36rem; display: table; margin:0.24rem auto 0;}
+.section2_t3 a.ljxq{   margin-top:0;}
+
+/* section6 */
+.section6title{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section_1218_title2.png) no-repeat; width:8.96rem; height:0.69rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-4.48rem; z-index:2;}
+.section6{background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section_1218_2.jpg) no-repeat 50% 0;background-size: cover;}
+
+.s6_box_c{ width:11rem; position:absolute; top:1.4rem; left:50%; margin-left:-5.5rem;}
+.s6_b1{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section_1218_2img1.png) no-repeat; background-size:100%; width:3.3rem; height:7.19rem; position:relative; float:left; margin-right:0.54rem;}
+.s6_b2{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section_1218_2img2.png) no-repeat; background-size:100%; width:3.3rem; height:7.19rem; position:relative; float:left;margin-right:0.54rem;}
+.s6_b3{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/bg_section_1218_2img3.png) no-repeat; background-size:100%; width:3.3rem; height:7.19rem; position:relative; float:left;}
+.s_box_t_js{ font-size:0.2rem; color:#a7bfda; font-weight:bold; text-align:center; line-height:0.2rem;}
+.s_box_txt{ position:absolute; top:4.87rem; left:0;}
+.t_left{ width:1.5rem; float:left; text-align:right;font-size:0.16rem; color:#a7bfda; line-height:0.16rem;}
+.t_right{ width:1.7rem; float:right; text-align:left; font-size:0.16rem; color:#a7bfda; line-height:0.16rem;}
+a.djckxq{ display:block; font-size:0.16rem; color:#151515; background:#e69800; width:1.5rem; height:0.44rem; text-align: center; line-height:0.42rem; position:absolute; bottom:0.29rem; left:0.91rem;}
+.mb12{ margin-bottom:0.12rem;}
+.pt10{ padding-top:0.1rem;}
+/* section7 */
+.section7title{ background:url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/act_bg_section3_title.png) no-repeat; width:6.09rem; height:0.66rem;  background-size:100%; position:absolute; top:1rem; left:50%; margin-left:-3.04rem;}
+.section7{background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/act_bg_section3.jpg) no-repeat 50% 0;background-size: cover;}
+
+.section3_t1{ font-size:0.24rem; color:#333333; font-weight:bold; width:100%; text-align:center; position:absolute; top:1.7rem; left:0;}
+.act_bg_section3_img{ background: url(//game.gtimg.cn/images/chiji/cp/a20181126icemap/act_bg_section3_img.jpg) no-repeat; width:12rem; height:6.3rem; position:absolute; top:2.25rem; left:50%; margin-left:-6rem; background-size:100%;}
+a.s3ckgd{ font-size:0.16rem; color:#010101; font-weight:bold; text-align:center; width:1.5rem; height:0.5rem; background:#e69800; display:block; line-height:0.48rem; position:absolute; top:4rem; left:1.4rem;}
+
+
+
+/*video*/
+.videopa{position: absolute; left: 50%; top: 50%; z-index: 101;width: 700px; height:394px; margin-left:-365px;border:none;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%); background:#000;}
+a.videobtn{ width:4.3rem; height:2.42rem; display:block; background:none; position:absolute; top:4.75rem; left:50%; margin-left:-2.15rem; display:block; text-indent:-9999rem;}
+a.videobtn img{ width:100%;  }
+
+.videoPop{position: absolute; left: 0; top: 0; z-index: 101;width: 100%;height: 100%; background-color: rgba(0,0,0,0.6);display: none;}
+#video{width: 700px; height:394px;}
+a.videoclose{position: absolute; left: 48%; top:0%; z-index: 101;width: 60px; margin-left:365px;border:none; color: #c4ad75; text-decoration:none; font: bold 70px/60px simsun;}
+
+
+#container{width: 100%;height: 100%;}
+
+
+
+/*copyright*/
+
+footer {display: block;}
+footer a{ color:inherit;}
+@media screen and (min-width: 768px) {
+  .g-footer {
+	  padding: 25px 45px 45px;
+  }
+}
+.g-body__main {-ms-flex: 1 0 auto;flex: 1 0 auto;background-color: #f0f3f5;color: #000;border-color: #d7d7d7;}
+.g-footer {color: #fff;background: #161616;padding: 25px 25px 45px;}
+.g-footer__section:first-child {-ms-flex-align: start;align-items: flex-start;border-top: 1px solid #707070;padding-top: 30px;margin-top: 20px;}
+@media screen and (min-width: 568px) {
+  .g-footer__section {
+	  display: -ms-flexbox;
+	  display: flex;
+	  -ms-flex-pack: justify;
+	  justify-content: space-between;
+	  -ms-flex-align: center;
+	  align-items: center;
+  }
+}
+.g-footer {color: #fff;background: #161616;padding: 25px 25px 45px;}
+@media screen and (max-width: 567px) {
+  .footer-info__split {
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+  }
+}
+.footer-info__split {display: -ms-flexbox;display: flex;-ms-flex-pack: justify;justify-content: space-between;-ms-flex-align: start;align-items: flex-start;}
+@media screen and (max-width: 567px) {
+	.footer-info__logo {margin: 0 0 20px;}
+}
+.footer-info__logo {color: #707070;}
+.footer-info__logo svg {width: 80px;height: 65px;}
+svg, img {/* display: block; max-width: 100%;*/height: auto;}
+@media screen and (min-width: 568px) {
+	.footer-info__legal {padding: 0 20px;}
+}
+.footer-info__legal {color: #707070;font-size: 12px;}
+.footer-info p:not(:first-child) {padding-top: 10px;}
+.divided-nav:not(:first-child) {padding-top: 10px;}
+.divided-nav {overflow: hidden;}
+.divided-nav__list {list-style: none;margin-left: -40px;}
+.divided-nav__list li:first-child {font-weight: bold;}
+.divided-nav__item {margin-left: 20px;padding-left: 20px;border-left: 1px solid currentColor;}
+.divided-nav__item {display: inline-block;vertical-align: middle;}
+.g-footer__section:not(:first-child) {-ms-flex-align: start;align-items: flex-start;border-top: 1px solid #707070;padding-top: 30px;margin-top: 20px;}
+@media screen and (min-width: 568px) {
+  .g-footer__section {
+	  display: -ms-flexbox;
+	  display: flex;
+	  -ms-flex-pack: justify;
+	  justify-content: space-between;
+	  -ms-flex-align: center;
+	  align-items: center;
+  }
+}
+@media screen and (max-width: 567px) {
+  .footer-info__rating {
+	  padding-top: 20px;
+  }
+}
